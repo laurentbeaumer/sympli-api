@@ -1,0 +1,24 @@
+{
+	"id": "4e79151e-986a-479a-9106-9d4d4542581f",
+	"name": "Local",
+	"values": [
+		{
+			"key": "host",
+			"value": "localhost",
+			"enabled": true
+		},
+		{
+			"key": "port",
+			"value": "5000",
+			"enabled": true
+		},
+		{
+			"key": "controller",
+			"value": "occcurences",
+			"enabled": true
+		}
+	],
+	"_postman_variable_scope": "environment",
+	"_postman_exported_at": "2020-10-27T23:28:52.582Z",
+	"_postman_exported_using": "Postman/7.34.0"
+}

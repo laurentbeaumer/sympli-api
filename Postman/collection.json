@@ -1,0 +1,208 @@
+{
+	"info": {
+		"_postman_id": "915cee0e-48b4-4ca8-ac4c-a5b8608748ee",
+		"name": "Sympli",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Occurences",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "e0cb799b-b851-4b06-aa90-94311a95cfc0",
+						"exec": [
+							"pm.test(\"Status test\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"    pm.response.to.not.be.error;\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{host}}:{{port}}/api/{{controller}}/values",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"api",
+						"{{controller}}",
+						"values"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search Engines",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "2c3fbf0e-25f0-4c05-b50e-8a88fc0b2dcb",
+						"exec": [
+							"pm.test(\"Status test\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"    pm.response.to.not.be.error;\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{host}}:{{port}}/api/{{controller}}/values",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"api",
+						"{{controller}}",
+						"values"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search Engines",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "817c6e03-70b1-4e4b-83f1-e0df48bd5f78",
+						"exec": [
+							"pm.test(\"Status test\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"    pm.response.to.not.be.error;\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    \"google.com\",\r\n    \"bing.com\"\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://{{host}}:{{port}}/api/{{controller}}/searchengines",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"api",
+						"{{controller}}",
+						"searchengines"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Keywords",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "7449ec15-c50f-494d-ba83-eccb1bf98f0c",
+						"exec": [
+							"pm.test(\"Status test\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"    pm.response.to.not.be.error;\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{host}}:{{port}}/api/{{controller}}/keywords",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"api",
+						"{{controller}}",
+						"keywords"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Keywords",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "0890c58d-f24d-46ef-ab57-07ff9445cf4c",
+						"exec": [
+							"pm.test(\"Status test\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"    pm.response.to.not.be.error;\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    \"e-settlements\",\r\n    \"electronic settlements\"\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://{{host}}:{{port}}/api/{{controller}}/keywords",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"api",
+						"{{controller}}",
+						"keywords"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
