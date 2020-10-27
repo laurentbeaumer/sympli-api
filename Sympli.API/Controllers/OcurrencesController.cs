@@ -41,6 +41,6 @@ namespace Sympli.API.Controllers
         [HttpPost]
         [Route("keywords")]
         public void SetKeywords([FromBody] string[] values) 
-            => occurrences.Keywords = values.Distinct();
+            => occurrences.Keywords = values.Distinct().Select(x=>x.Replace(" ", "+"));
     }
 }
