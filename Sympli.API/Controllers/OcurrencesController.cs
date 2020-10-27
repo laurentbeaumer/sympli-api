@@ -35,12 +35,12 @@ namespace Sympli.API.Controllers
         [HttpPost]
         [Route("searchengines")]
         public void SetSearchEngines([FromBody] string[] values)
-            => occurrences.SearchEngines = values;     
+            => occurrences.SearchEngines = values.Distinct();     
 
         // POST: set keywords
         [HttpPost]
         [Route("keywords")]
         public void SetKeywords([FromBody] string[] values) 
-            => occurrences.Keywords = values;
+            => occurrences.Keywords = values.Distinct();
     }
 }
